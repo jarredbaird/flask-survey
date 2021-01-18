@@ -1,0 +1,8 @@
+{% extends 'base.html.j2' %}
+{% block content %}
+<h1>{{survey.title}}</h1>
+<h3>Thank you for your feedback! Please take these answers and SHOVE 'EM!</h3>
+{% for q, ans in qa %}
+<p>{{q.question}}: {{ans}}</p>
+{% endfor %}
+{% endblock %}

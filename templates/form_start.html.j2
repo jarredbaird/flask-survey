@@ -1,0 +1,9 @@
+{% extends 'base.html.j2'  %}
+
+{% block content %}
+<h1>{{survey.title}}</h1>
+<h3>{{survey.instructions}}</h3>
+<form action="/start" method="POST">
+  <button>Start!</button>
+</form>
+{% endblock %}
